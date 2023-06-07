@@ -1,18 +1,37 @@
 # Salesforce DX Project: Next Steps
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+login.salesforce
+user: danny.lafontant@wise-bear-ezorzm.com
+passord: poiuy0987
 
-## How Do You Plan to Deploy Your Changes?
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Configure Your Salesforce DX Project
+## Acces the Salesforce ORG
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### Locate the Sales Application from App Launcger
+![Sales App](/picture/loginSales.PNG)
 
-## Read All About It
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### Go under Book check the view list
+![Book Obj](/picture/booklistview.PNG)
+
+
+### Make sure to delete some books. The Apex code prevents duplcation. The HTTP callouts from the endpoint will update all books based on Title
+![Delete recs](/picture/deleteBook.PNG)
+
+
+### Records from A book
+![Delete recs](/picture/book.PNG)
+
+
+### Use the Flow button action, connected to the Apex Class, added inside a flow to call the endpoint. `Update My Library` button calls the endpoint to add all the books from the endpoint without duplication, make sure to delete some books
+![Flow Act](/picture/activateFLOW.PNG)
+
+### Check the Flow with the Apex action from the class  [GoogleBook] `GoogleBook`
+![Flow](/picture/flow.PNG)
+## API endpoint Saved on custom object for security
+
+The 2 classes files contains all the configuration information for this Integration, built with Apex and love [GoogleBooks.cls and GoogleBooksTest.cls]. Danny for more information: danieljajr@gmail.com. Password and loging for testing are provided on Top page
+
+
+

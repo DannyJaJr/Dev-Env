@@ -8,7 +8,7 @@ passord: poiuy0987
 
 ## Acces the Salesforce ORG
 
-### Locate the Sales Application from App Launcger
+### Locate the Sales Application from App Launcher
 ![Sales App](/picture/loginSales.PNG)
 
 

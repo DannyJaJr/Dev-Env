@@ -84,7 +84,10 @@ public with sharing class GoogleBooks {
                 System.debug('my booksToInsert is: ' + booksToInsert);
             }
         } catch (Exception e) {
-            throw new AuraHandledException(e.getMessage());
+            System.debug('An error occurred: ' + e.getMessage());
+            throw new AuraHandledException('Failed to update the library. Please try again later.');
         }
+        
+        
     }
 }

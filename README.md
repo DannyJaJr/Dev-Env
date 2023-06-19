@@ -1,4 +1,4 @@
-# Salesforce DX Project: Next Steps
+# Google Books API Integration: Next Steps
 
 login.salesforce
 user: danny.lafontant@wise-bear-ezorzm.com
